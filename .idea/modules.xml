@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/soacache/src/main/main.iml" filepath="$PROJECT_DIR$/soacache/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soacache/src/main/redis.iml" filepath="$PROJECT_DIR$/soacache/src/main/redis.iml" />
+    </modules>
+  </component>
+</project>
