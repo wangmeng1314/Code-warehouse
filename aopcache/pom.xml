@@ -30,7 +30,6 @@
             <artifactId>spring-jdbc</artifactId>
             <version>3.2.9.RELEASE</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
@@ -51,7 +50,6 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.6</version>
         </dependency>
-        <!-- http相关 -->
         <dependency>
             <groupId>cglib</groupId>
             <artifactId>cglib</artifactId>
@@ -72,7 +70,7 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
             <version>3.14</version>
-        </dependency> <!-- ooxml -->
+        </dependency>
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
