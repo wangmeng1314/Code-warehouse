@@ -65,6 +65,12 @@ public class CacheValuesOperation {
     }
 
     /**
+     * 更新缓存
+     */
+    public void main(String[] args) {
+//        getMethod();
+    }
+    /**
      * <p>
      * 获取被拦截方法对象, MethodSignature.getMethod() 获取的是顶层接口或者父类的方法对象 而缓存的注解在实现类的方法上
      * 所以应该使用反射获取当前对象的方法对象
