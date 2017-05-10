@@ -35,9 +35,30 @@ public class RedisClient {
         }
         return null;
     }
+
+    /**
+     * 批量设置
+     *
+     * @param params
+     * @return
+     */
     public String mset(String ...params){
         Jedis jedis = getResources();
         try {
+            String strings = jedis.mset(params);
+            return strings;
+        } catch (Exception e)
+            e.printStackTrace();
+        } finally {
+            cleanRedisClient(jedis);
+        }
+        return null;
+    }
+
+    public String hSet(String... params) {
+        Jedis jedis = getResources();
+        try {
+            Long hset = jedis.hset("hash", "key", "value");
             String strings = jedis.mset(params);
             return strings;
         } catch (Exception e) {
@@ -47,6 +68,7 @@ public class RedisClient {
         }
         return null;
     }
+
     public void cleanRedisClient(Jedis jedis){
         if (jedis!=null){
             jedis.close();

@@ -17,22 +17,19 @@ public class SwaggerDocumentationConfig {
 
     ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-            .title("Uber API")
-            .description("Move your app forward with the Uber API")
-            .license("")
-            .licenseUrl("http://unlicense.org")
-            .termsOfServiceUrl("")
-            .version("1.0.0")
-            .contact(new Contact("","", ""))
-            .build();
+                .title("线上内网测试工具")
+                .termsOfServiceUrl("")
+                .version("1.0.0")
+                .contact(new Contact("fulei.yang", "#", "943065365@qq.com"))
+                .build();
     }
 
     @Bean
-    public Docket customImplementation(){
+    public Docket customImplementation() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                    .apis(RequestHandlerSelectors.basePackage("io.swagger.api"))
-                    .build()
+                .apis(RequestHandlerSelectors.basePackage("io.swagger.api"))
+                .build()
                 .directModelSubstitute(org.joda.time.LocalDate.class, java.sql.Date.class)
                 .directModelSubstitute(org.joda.time.DateTime.class, java.util.Date.class)
                 .apiInfo(apiInfo());
